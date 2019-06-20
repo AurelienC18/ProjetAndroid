@@ -14,17 +14,14 @@ import kotlinx.android.synthetic.main.activity_lampetorche.*
 
 class LampeTorche : AppCompatActivity() {
 
-    var lightState = false
+    var lightState = true
     var cameraManager: CameraManager? = null
-    var mCameraId: String? = null
-    var switch: Button? = null
     var camera: Camera? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lampetorche)
-        val isAvailable = applicationContext.packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)
-        switch = imageView3 as Button
+        //val isAvailable = applicationContext.packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)
         cameraManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager
         try {
             val cameraList = cameraManager!!.cameraIdList
@@ -38,7 +35,7 @@ class LampeTorche : AppCompatActivity() {
     fun switchLight(view: View) {
         lightState = !lightState
 
-        if (lightState) {
+        if (!lightState) {
             lampStateLib.text = "On"
         } else {
             lampStateLib.text = "Off"
@@ -87,10 +84,5 @@ class LampeTorche : AppCompatActivity() {
                 }
             }
         }
-    }
-
-    companion object {
-        private var isOpen =false
-        private val camera:android.hardware.Camera?=null
     }
 }
