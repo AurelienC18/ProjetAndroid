@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, LampeTorche::class.java)
         // start your next activity
         startActivity(intent)
+        imageView2.setOnClickListener {
+            val intent = Intent(this, CompassActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     fun toRecorder(view: View) {
