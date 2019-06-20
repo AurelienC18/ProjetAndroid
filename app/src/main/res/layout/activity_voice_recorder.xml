@@ -20,6 +20,12 @@
             android:layout_marginTop="32dp"
     />
 
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" android:layout_above="@+id/button_pause_recording"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="11dp" android:layout_below="@+id/textview_sound_recorder_heading"
+            android:id="@+id/products"/>
     <Button
             android:id="@+id/button_start_recording"
             android:layout_width="wrap_content"
@@ -28,7 +34,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="32dp"
             android:layout_marginBottom="32dp"
-            android:layout_centerVertical="true"/>
+    />
 
     <Button
             android:id="@+id/button_pause_recording"

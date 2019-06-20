@@ -12,8 +12,6 @@
             android:theme="@style/AppTheme">
         <activity android:name=".VoiceRecorder">
         </activity>
-        <activity android:name=".LampeTorche">
-        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
