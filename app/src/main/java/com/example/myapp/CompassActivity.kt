@@ -8,6 +8,9 @@ import android.view.animation.RotateAnimation
 import android.hardware.*
 import android.widget.ImageView
 import android.widget.TextView
+import android.content.Intent
+import android.view.MenuItem
+
 
 class CompassActivity : AppCompatActivity(), SensorEventListener {
 
@@ -35,6 +38,13 @@ class CompassActivity : AppCompatActivity(), SensorEventListener {
         // initialize your android device sensor capabilities
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val myIntent = Intent(applicationContext, MainActivity::class.java)
+        startActivityForResult(myIntent, 0)
+        return true
+    }
+
 
     override fun onResume() {
         super.onResume()
@@ -84,4 +94,6 @@ class CompassActivity : AppCompatActivity(), SensorEventListener {
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
         // not in use
     }
+
+
 }
