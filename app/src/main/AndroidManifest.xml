@@ -11,6 +11,8 @@
             android:theme="@style/AppTheme">
         <activity android:name=".LampeTorche">
         </activity>
+        <activity android:name=".CompassActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
