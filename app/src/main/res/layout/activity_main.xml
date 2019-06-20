@@ -20,14 +20,14 @@
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/imageView5" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="50dp" android:onClick="toMap"/>
     <ImageView
             android:layout_width="125dp"
             android:layout_height="125dp" app:srcCompat="@mipmap/ic_compass" android:id="@+id/imageView2"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="50dp" app:layout_constraintBottom_toTopOf="@+id/imageView3"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"/>
+            app:layout_constraintEnd_toStartOf="@+id/imageView" android:onClick="toCompass"/>
     <ImageView
             android:layout_width="125dp"
             android:layout_height="125dp" app:srcCompat="@mipmap/ic_info" android:id="@+id/imageView5"

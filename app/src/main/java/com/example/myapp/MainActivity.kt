@@ -93,4 +93,14 @@ class MainActivity : AppCompatActivity() {
         // start your next activity
         startActivity(intent)
     }
+
+    fun toCompass(view: View) {
+        val intent = Intent(this, CompassActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun toMap(view: View) {
+        val intent = Intent(this, MapActivity::class.java)
+        startActivity(intent)
+    }
 }
