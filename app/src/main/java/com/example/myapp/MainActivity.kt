@@ -103,4 +103,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, MapActivity::class.java)
         startActivity(intent)
     }
+
+    fun toInfo(view: View) {
+        val intent = Intent(this, InfoActivity::class.java)
+        startActivity(intent)
+    }
 }

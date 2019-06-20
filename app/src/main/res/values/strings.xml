@@ -1,8 +1,11 @@
 <resources>
     <string name="todo">TODO</string>
     <string name="off">Off</string>
-    <string name="app_name">SurvivorApp</string>
+    <string name="app_name">Staying Alive</string>
     <string name="heading">Heading: 0.0</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_recorder">Survival log</string>
+    <string name="title_activity_compass">Compass</string>
+    <string name="title_activity_info">Survival tips</string>
     <string name="google_maps_key">AIzaSyBJ7u6viFN4hjF2Js8H5cvAgPK9_KPqa-A</string>
 </resources>

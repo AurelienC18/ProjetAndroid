@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        tools:context=".CompassActivity">
+    <TextView
+            android:text="1. Master your attitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2" android:accessibilityHeading="true"
+            android:textSize="24sp" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp"/>
+    <TextView
+            android:text="A survival situation is not the time to panic. You are more likely to survive a difficult situation if you focus on maintaining a positive, proactive attitude.   • Develop a plan.  • Inventory the resources you have. • Identify the critical tasks required for survival (water, shelter, warmth). • Determination: It’s often grit that separates a survivor from a non-survivor. • Recognize feelings are not facts. You may feel hopeless, but keep your thoughts focused on the tasks that need to be accomplished."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" android:layout_marginStart="24dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp" android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="2. Make an insulated shelter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView4" android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:layout_marginTop="24dp"/>
+    <TextView
+            android:text="Building an effective shelter can help protect you from hypothermia — and the elements.   • Think small: Since your body heat will be your primary source of warmth, build a shelter just big enough to accommodate your body when lying down. • Construct the framework: To make a simple lean-to, use available resources, such as a fallen tree or rest a strong branch securely against a standing tree.  • Add the sides: Stack sticks close together on one side. Use progressively smaller sticks to fill in gaps. • Add insulation: Cover the sides with bark, leaves, pine needles, moss, etc. — the thicker the material, the more protected you will be. Add similar insulation to the ground, the thicker the better."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" android:textSize="18sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
